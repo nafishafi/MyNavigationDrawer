@@ -16,8 +16,7 @@
         android:id="@+id/imageView"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/pass_foto" />
+        android:paddingTop="@dimen/nav_header_vertical_spacing" />
 
     <TextView
         android:layout_width="match_parent"
