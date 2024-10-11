@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var profileCircleImageView: CircleImageView
     private var profileImageUrl = "https://lh3.googleusercontent.com/-4qy2DfcXBoE/AAAAAAAAAAI/AAAAAAAABi4/rY-jrtntAi4/s640-il/photo.jpg"
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -48,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_cart
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -65,4 +66,5 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }
